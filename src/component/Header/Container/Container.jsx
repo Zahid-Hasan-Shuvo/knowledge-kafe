@@ -11,12 +11,17 @@ fetch('fakeData.json')
 
   },[])
 
+  const handleAddToBookmark=(data)=>{
+
+ console.log('ok?');
+  }
+
   return (
     <div className='container'>
-     
       <div className='blog-part'>
       {data.map(singledata=>( <SingleData
-      
+
+handleAddToBookmark={handleAddToBookmark}
       key={singledata.id}
       singledata={singledata}
       >
@@ -31,7 +36,7 @@ fetch('fakeData.json')
 
 
       <div className='bookmark-part'>
-        <h1>bookmark part</h1>
+        <h3>bookmark Blog: </h3>
       </div>
     </div>
   );

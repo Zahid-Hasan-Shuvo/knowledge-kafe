@@ -5,7 +5,12 @@
 .blog-part{
   margin: 50px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  
   gap: 45px;
+
+}
+.bookmark-part{
+  background-color: grey;
+  margin-left: 50px;
 
 }
