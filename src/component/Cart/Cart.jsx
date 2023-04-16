@@ -1,20 +1,19 @@
-import React from 'react';
-import './Cart.css'
+import React from "react";
+import "./Cart.css";
 
-const Cart = ({cart}) => {
+const Cart = ({bookMarks}) => {
+ 
 
- let title ='';
- let time=0;
-  for(const singleCart of cart){
-  title = singleCart.title;
-  time=time+singleCart.time;
+  let title = "";
 
+  for (const singleCart of cart) {
+    title = singleCart.title;
   }
   return (
-    <div className='cart'>
-      <h3> Spent time on read = {time} min</h3>
-       <h3>bookmark Blog:{cart.length} </h3>
-       <p>{title}</p>
+    <div className="cart">
+      <h3> Spent time on read = min</h3>
+      <h3>bookmark Blog:{cart.length} </h3>
+      <p>{title}</p>
     </div>
   );
 };

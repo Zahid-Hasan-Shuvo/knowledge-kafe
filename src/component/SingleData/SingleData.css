@@ -1,40 +1,36 @@
-.product img{
-  width: 1000px ;
-  height: 500px ;
+.product img {
+  width: 100%;
+  height: 500px;
   margin: 7px;
   border-radius: 8px;
 }
 
-.profile-img img{
+.profile-img img {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-
 }
-.owner{
- display: flex;
- align-items: center;
-
+.owner {
+  display: flex;
+  align-items: center;
 }
-.name{
+.name {
   padding-left: 15px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.add-icon{
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin-right: 300px;
+.add-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 300px;
 }
 
-.taging{
+.taging {
   display: flex;
   align-items: center;
- 
 }
-.firsttag{
+.firsttag {
   margin-right: 10px;
-
 }

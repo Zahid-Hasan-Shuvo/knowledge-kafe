@@ -1,18 +1,28 @@
-.container{
+.container {
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
-.blog-part{
+.blog-part {
   margin: 50px;
   display: grid;
-  
-  gap: 45px;
 
+  gap: 45px;
 }
-.bookmark-part{
+.bookmark-part {
   position: relative;
-  
+
   background-color: grey;
   margin-left: 50px;
+}
 
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bookmark-part {
+    background-color: grey;
+    padding: 20px 100px;
+    margin: 20px;
+  }
 }

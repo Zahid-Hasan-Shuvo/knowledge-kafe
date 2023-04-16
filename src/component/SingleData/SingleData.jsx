@@ -1,14 +1,12 @@
 import React from "react";
 import "./SingleData.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark} from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const SingleData = (props) => {
-  const { cover, name, img, title } = props.singledata;
-  const  handleAddToBookmark= props.handleAddToBookmark;
-
-
- 
+  const { cover, name, img, title, time } = props.singledata;
+  const handleAddToBookmark = props.handleAddToBookmark;
+  const totalTimeHandler = props.totalTimeHandler;
 
   return (
     <div className="product">
@@ -27,8 +25,16 @@ const SingleData = (props) => {
           </div>
         </div>
 
-        <div>
-          <p onClick={()=>handleAddToBookmark(props.singledata)}>5 min to read <FontAwesomeIcon icon={faBookmark} /></p>
+        <div style={{ padding: 10 }}>
+          <p>
+            {time} min to read{" "}
+            <span
+              style={{ cursor: "pointer", fontSize: 20, marginLeft: 5 }}
+              onClick={() => handleAddToBookmark(props.singledata)}
+            >
+              <FontAwesomeIcon icon={faBookmark} />
+            </span>
+          </p>
         </div>
       </div>
 
@@ -37,7 +43,9 @@ const SingleData = (props) => {
         <p className="firsttag">#beginers</p>
         <p>#programing</p>
       </div>
-      <a href="" onClick={()=>totalTime()}>Mark as read..</a>
+      <div>
+        <p onClick={()=>totalTimeHandler(time)} style={{ cursor: "pointer", color: "blue" }}>Mark as read..</p>
+      </div>
     </div>
   );
 };
