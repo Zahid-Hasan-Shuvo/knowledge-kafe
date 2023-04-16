@@ -6,7 +6,8 @@
       "name": "Mr.Raju",
       "img":"https://randomuser.me/api/portraits/women/81.jpg",
       
-      "title": "How to get your first job as a self-taught programmer"
+      "title": "How to get your first job as a self-taught programmer",
+      "time": 5
       
   },
   {
@@ -16,7 +17,8 @@
       "name": "Mr.Zahid",
       "img":"https://randomuser.me/api/portraits/women/81.jpg",
       
-      "title": "How to get your first job as a self-taught programmer"
+      "title": "How to get your first job as a self-taught programmer",
+      "time": 15
       
   },
   {
@@ -26,7 +28,8 @@
       "name": "Mr.Saju",
       "img":"https://randomuser.me/api/portraits/women/81.jpg",
       
-      "title": "How to get your first job as a self-taught programmer"
+      "title": "How to get your first job as a self-taught programmer",
+      "time": 25
       
   },
   {
@@ -36,7 +39,8 @@
       "name": "Mr.karim",
       "img":"https://randomuser.me/api/portraits/women/81.jpg",
       
-      "title": "How to be a web devoloper & becaome a success person in the world"
+      "title": "How to be a web devoloper & becaome a success person in the world",
+      "time": 20
       
   }
 

@@ -37,7 +37,7 @@ const SingleData = (props) => {
         <p className="firsttag">#beginers</p>
         <p>#programing</p>
       </div>
-      <a href="">Mark as read..</a>
+      <a href="" onClick={()=>totalTime()}>Mark as read..</a>
     </div>
   );
 };

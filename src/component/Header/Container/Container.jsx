@@ -6,6 +6,8 @@ import Cart from '../../Cart/Cart';
 const Container = () => {
   const[data, setData]=useState([]);
   const[cart, setCart]=useState([]);
+  const[time, setTime]=useState(0);
+
   useEffect(()=>{
 fetch('fakeData.json')
 .then(res=>res.json())
@@ -13,6 +15,11 @@ fetch('fakeData.json')
 
   },[])
 
+ const totalTime =()=>{
+  const newTime=[...time, singledata];
+  setTime(newTime)
+
+ }
   const handleAddToBookmark=(singledata)=>{
 const newCart=[...cart, singledata];
 
