@@ -1,0 +1,40 @@
+.product img{
+  width: 1000px ;
+  height: 500px ;
+  margin: 7px;
+  border-radius: 8px;
+}
+
+.profile-img img{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+
+}
+.owner{
+ display: flex;
+ align-items: center;
+
+}
+.name{
+  padding-left: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.add-icon{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-right: 300px;
+}
+
+.taging{
+  display: flex;
+  align-items: center;
+ 
+}
+.firsttag{
+  margin-right: 10px;
+
+}
