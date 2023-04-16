@@ -4,6 +4,7 @@ import SingleData from '../../SingleData/SingleData';
 
 const Container = () => {
   const[data, setData]=useState([]);
+  const[cart, setCart]=useState([]);
   useEffect(()=>{
 fetch('fakeData.json')
 .then(res=>res.json())
@@ -11,9 +12,9 @@ fetch('fakeData.json')
 
   },[])
 
-  const handleAddToBookmark=(data)=>{
-
- console.log('ok?');
+  const handleAddToBookmark=(singledata)=>{
+const newCart=[...cart, singledata];
+setCart(newCart);
   }
 
   return (
@@ -36,7 +37,7 @@ handleAddToBookmark={handleAddToBookmark}
 
 
       <div className='bookmark-part'>
-        <h3>bookmark Blog: </h3>
+        <h3>bookmark Blog:{cart.length} </h3>
       </div>
     </div>
   );

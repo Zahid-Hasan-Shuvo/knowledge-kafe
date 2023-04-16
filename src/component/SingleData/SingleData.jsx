@@ -27,7 +27,7 @@ const SingleData = (props) => {
         </div>
 
         <div>
-          <p onClick={()=>handleAddToBookmark()}>5 min to read <FontAwesomeIcon icon={faBookmark} /></p>
+          <p onClick={()=>handleAddToBookmark(props.singledata)}>5 min to read <FontAwesomeIcon icon={faBookmark} /></p>
         </div>
       </div>
 
