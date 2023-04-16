@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Container.css'
 import SingleData from '../../SingleData/SingleData';
+import Cart from '../../Cart/Cart';
 
 const Container = () => {
   const[data, setData]=useState([]);
@@ -14,6 +15,7 @@ fetch('fakeData.json')
 
   const handleAddToBookmark=(singledata)=>{
 const newCart=[...cart, singledata];
+
 setCart(newCart);
   }
 
@@ -37,7 +39,8 @@ handleAddToBookmark={handleAddToBookmark}
 
 
       <div className='bookmark-part'>
-        <h3>bookmark Blog:{cart.length} </h3>
+       <Cart cart={cart}></Cart>
+       
       </div>
     </div>
   );

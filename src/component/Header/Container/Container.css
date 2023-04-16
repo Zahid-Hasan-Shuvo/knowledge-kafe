@@ -10,6 +10,8 @@
 
 }
 .bookmark-part{
+  position: relative;
+  
   background-color: grey;
   margin-left: 50px;
 

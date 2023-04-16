@@ -7,6 +7,7 @@ const SingleData = (props) => {
   const { cover, name, img, title } = props.singledata;
   const  handleAddToBookmark= props.handleAddToBookmark;
 
+
  
 
   return (
